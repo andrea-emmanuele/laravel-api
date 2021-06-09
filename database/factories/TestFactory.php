@@ -22,7 +22,8 @@ class TestFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->unique()->words(12,true),
+            'description' => $this->faker->paragraphs(2, true),
         ];
     }
 }
