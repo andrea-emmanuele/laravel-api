@@ -17,7 +17,7 @@ class TestController extends Controller
         $tests = Test::all();
 
         return response()->json([
-            'name' => $tests,
+            'response' => $tests,
             'success' => true,
         ]);
     }
